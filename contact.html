@@ -9,17 +9,18 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
-		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 		<link rel="shortcut icon" href="./img/page1-2/trang 1-2-02.png" type="image/x-icon">
 		<link rel="stylesheet" href="./css/main.min.css">
 		<title>Mnail-Contact</title>
 	</head>
 	<body class="Contact-page">
-		<header>
-			<div class="header_top"> 
+		<header id="navbar">
+			<div class="header_top" id="header_top"> 
 				<div class="container-fluid"> 
 					<div class="header_top-item">
 						<div class="items_social-network">
@@ -46,7 +47,7 @@
 						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><i class="fas fa-bars"></i></button>
 						<div class="collapse navbar-collapse" id="navbarNav">
 							<ul class="navbar-nav">
-								<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+								<li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
 								<li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
 								<li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
 									<div class="dropdown-menu" aria-labelledby="navbarDropdown"><a class="dropdown-item" href="services-nails.html">NAILS</a><a class="dropdown-item" href="services-waxing.html">WAXING</a><a class="dropdown-item" href="services-skincare.html">SKIN CARE</a><a class="dropdown-item" href="services-massages.html">MASSAGES</a></div>
@@ -68,7 +69,7 @@
 		</header>
 		<main>
 			<section class="banner"> 
-				<div class="banner_slide"> <img src="./img/page6/trang 6-01.jpg" alt=""></div>
+				<div class="banner_slide" data-aos="zoom-in" data-aos-easing="ease-out-cubic" data-aos-duration="1000"> <img src="./img/page6/trang 6-01.jpg" alt=""></div>
 			</section>
 			<section class="contact"> 
 				<div class="container"> 
@@ -201,15 +202,16 @@
 			
 		</script>
 		<script src="./js/global.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script>AOS.init();</script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 		<script>
 			LazyLoad.js([
 				'./js/main.min.js'
 				], function () {
 					window.dispatchEvent(new Event('resize'));
 			});
-			AOS.init();
 		</script>
 	</body>
 </html>
